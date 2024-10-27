@@ -1,0 +1,299 @@
+/* Reset de márgenes y relleno */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e0e0e0;
+}
+
+/* Estilos del header */
+header {
+  background-image: url('../IMG/Mujer-mapa-viaje.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 800px; 
+  padding: 0 40px; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-blend-mode: darken; 
+}
+
+/* Parte superior del header */
+.up {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  height: 150px;
+  margin-bottom: 50px; 
+  padding: 0 30px;
+}
+
+/* Logo */
+.up .logo img {
+  width: 250px;
+}
+
+/* Contenedor del menú y botón */
+.menu-search-container {
+  display: flex; 
+  align-items: center; 
+  margin-left: auto; 
+}
+
+/* Menú */
+.menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-right: 10px;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  font-weight: 400;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu ul li a i {
+  margin-right: 5px;
+}
+
+.menu ul li a:hover {
+  color: #0785e6;
+}
+
+/* Estilos del botón de contacto */
+.search .btn-contact {
+  padding: 15px 30px;
+  background-color: #0785e6;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-contact:hover {
+  background-color: white;
+  color: #0785e6;
+}
+
+
+.nosotros h1 {
+
+  position: absolute; /* Posición absoluta */
+  top: 300px; /* Distancia desde la parte superior */
+  left: 420px; /* Distancia desde la parte izquierda */
+  color: white;
+  font-size: 300%
+
+}
+
+.nosotros p {
+
+  position: absolute; /* Posición absoluta */
+  top: 400px; /* Distancia desde la parte superior */
+  left: 600px; /* Distancia desde la parte izquierda */
+  color: white;
+  text-align: center;
+
+}
+
+
+
+.viaje {
+  background-color:#021f41; /* Fondo azul */
+  color: white; /* Color del texto */
+  padding-top: 50px;
+  padding-bottom: 200px;
+  
+}
+
+.viaje img {
+  width: 500px; /* Ajusta el tamaño de la imagen según necesites */
+  margin-left: 100px; /* Espacio entre el texto y la imagen */
+  border-radius: 10px;
+
+}
+
+.viaje .texto {
+  display: flex;
+  flex-direction: column; /* Organiza el texto en columna */
+  text-align:right;
+}
+
+.viaje h2 {
+  margin: 0; /* Elimina el margen por defecto del h2 */
+  text-align: left;
+  margin-left: 980px;
+  margin-top: 10px;
+  font-size: 300%;
+  color: #f0bb00;
+}
+
+.viaje p {
+  margin-bottom: 800;
+  margin: 5px 0; /* Espaciado entre párrafos */
+  text-align: left;
+  margin-left: 980px;
+}
+
+
+
+
+
+
+
+.Dos-componentes {
+  display: flex; /* Organiza los componentes en fila */
+  justify-content: space-around; /* Espacia los componentes uniformemente */
+  margin: 20px; /* Margen alrededor del contenedor */
+}
+
+.info1, .info2 {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center; /* Centra horizontalmente los elementos */
+  text-align: center; /* Centra el texto */
+  background-color: #f0f0f0; /* Color de fondo opcional */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados opcionales */
+  width: 300px; /* Ajusta el ancho según tus necesidades */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+.info1 img, .info2 img {
+  width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+  height: auto; /* Mantiene la relación de aspecto */
+  border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+h2 {
+  margin: 10px 0; /* Espaciado superior e inferior para los encabezados */
+}
+
+p {
+  margin: 5px 0; /* Espaciado entre párrafos */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+  background-color: #021f41;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 20px;
+}
+
+footer .caja {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 300px;
+  margin: 0 10px;
+}
+
+footer .caja:first-child {
+  flex: 0.7;
+  max-width: 200px;
+}
+
+footer .caja:not(:first-child) {
+  flex: 1;
+  max-width: 300px;
+}
+
+.caja h2 {
+  color: #f0bb00;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.caja p {
+  color: white;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.caja a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.caja a:hover {
+  color: #f0bb00;
+}
+
+.caja a i {
+  color: #f0bb00;
+  margin-right: 5px;
+}
+
+.caja .btn-foot {
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 150px;
+  background-color: #f0bb00;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.caja .btn-foot:hover {
+  background-color: white;
+  color: #f0bb00;
+}
+
+.line{
+  background-color: #f0bb00;
+  padding: 40px;
+}

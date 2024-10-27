@@ -1,0 +1,359 @@
+/* Reset de márgenes y relleno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #e0e0e0;
+}
+
+/* Estilos del header */
+header {
+    background-image: url("../IMG/via.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 800px; 
+    padding: 0 40px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-blend-mode: darken; 
+}
+
+/* Parte superior del header */
+.up {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 150px;
+    margin-bottom: 50px; 
+    padding: 0 30px;
+}
+
+/* Logo */
+.up .logo img {
+    width: 250px;
+}
+
+/* Contenedor del menú y botón */
+.menu-search-container {
+    display: flex; 
+    align-items: center; 
+    margin-left: auto; 
+}
+
+/* Menú */
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-right: 10px;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.menu ul li a i {
+    margin-right: 5px;
+}
+
+.menu ul li a:hover {
+    color: #0785e6;
+}
+
+/* Estilos del botón de contacto */
+.search .btn-contact {
+    padding: 15px 30px;
+    background-color: #0785e6;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: white;
+    color: #0785e6;
+}
+
+/* Parte inferior (down) */
+.down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Redes sociales */
+.down .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.icon-container a {
+    color: white;
+    font-size: 50px;
+    margin: 10px 0;
+    transition: color 0.3s;
+}
+
+.icon-container a:hover {
+    color: #0785e6;
+}
+
+/* Mensaje */
+.message {
+    text-align: center;
+}
+
+.message h2 {
+    color: white;
+    font-size: 100px; 
+    font-weight: 1000;
+    line-height: 1.5; 
+    margin: 0; 
+    text-transform: uppercase;
+}
+
+/* Separador */
+.separator {
+    width: 70%;
+    height: 300px;
+    background-color: rgba(80, 143, 177, 0.8);
+    position: relative;
+    top: -75px;
+    right: 0;
+    margin-left: auto;
+    z-index: 10;
+}
+
+/* Contenido padre */
+.contenido-padre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    margin: 0 100px;
+}
+
+.contenido-uno h2 {
+    width: 650px;
+    font-size: 80px;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    margin-top: -200px;
+}
+
+.contenido-uno p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    width: 500px;
+    margin-top: -20px;
+}
+
+.contenido-uno a {
+    background-color: #f0bb00;
+    padding: 20px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Sombra añadida */
+}
+
+.contenido-uno a:hover {
+    background-color: #021F41;
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3); /* Efecto de sombra en hover */
+}
+
+/* Ajuste del video */
+.contenido-dos video {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    top: -150px;
+    z-index: 15;
+}
+
+.video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Sección Get */
+.contenido-get {
+    background-image: url("../IMG/beach'.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 560px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-d {
+    text-align: center;
+}
+
+.contenido-d h3 {
+    color: white;
+    font-size: 40px;
+}
+
+.contenido-d .resalt {
+    color: #f0bb00;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.contenido-d p {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.contenido-d .btn-get {
+    padding: 20px 40px;
+    background-color: #f0bb00;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-get:hover {
+    background-color: #021F41;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sección final */
+.contenido-fr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.contenido-fr h2 {
+    font-size: 32px;
+    color: #021F41;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background-color: #021F41;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 20px;
+}
+
+footer .caja {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 300px;
+    margin: 0 10px;
+}
+
+footer .caja:first-child {
+    flex: 0.7;
+    max-width: 200px;
+}
+
+footer .caja:not(:first-child) {
+    flex: 1;
+    max-width: 300px;
+}
+
+.caja h2 {
+    color: #f0bb00;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.caja p {
+    color: white;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.caja a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.caja a:hover {
+    color: #f0bb00;
+}
+
+.caja a i {
+    color: #f0bb00;
+    margin-right: 5px;
+}
+
+.caja .btn-foot {
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 150px;
+    background-color: #f0bb00;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.caja .btn-foot:hover {
+    background-color: white;
+    color: #f0bb00;
+}
+
+.line{
+    background-color: #f0bb00;
+    padding: 40px;
+}
